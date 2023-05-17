@@ -42,7 +42,6 @@ class TestBooksCollector:
         collector.add_new_book('Анна Корнеева')
         collector.add_new_book('Убить переснежника')
         collector.set_book_rating('Трое в лодке: нищета и собаки', 3)
-        #collector.add_new_book(book_name)
         collector.set_book_rating('Анна Корнеева', 6)
         collector.set_book_rating('Убить переснежника', 3)
         assert len(collector.get_books_with_specific_rating(3)) == 2
