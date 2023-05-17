@@ -31,9 +31,9 @@ class TestBooksCollector:
         collector.set_book_rating(book, 5)
         assert collector.get_book_rating(book) == 5
 
-    def test_get_book_rating_unadded_book_shows_error(self):
+    def test_get_book_rating_unadded_book_get_none(self):
         collector = BooksCollector()
-        assert collector.get_book_rating('Гордость и предубеждение') in range (1, 11), 'This book is not added'
+        assert collector.get_book_rating('Гордость и предубеждение') == None
 
 
     def test_get_books_with_specific_rating_rating3_get_two_books(self):
