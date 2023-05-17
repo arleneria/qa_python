@@ -75,3 +75,13 @@ class TestBooksCollector:
     def test_delete_book_from_favorites_delete_unadded_book_shows_error(self):
         collector = BooksCollector()
         assert collector.delete_book_from_favorites('Кря'), 'Cannot delete unadded book'
+
+    def test_add_new_book_add_book_twice_shows_error(self):
+        collector = BooksCollector()
+        collector.add_new_book('Кря-кря')
+        assert collector.add_new_book('Кря-кря'), 'Cannot add book twice'
+
+    def test_set_book_rating_unadded_book_shows_error(self):
+        collector = BooksCollector()
+        assert collector.set_book_rating('Кря-кря', 4), 'Cannot set the rating if book is unadded'
+
