@@ -25,8 +25,8 @@ test_add_new_book_add_two_books изначально был реализован
 в тесте test_delete_book_from_favorites_delete_unadded_book_shows_error пытаемся удалить недобавленную книгу, тест 
 выводит сообщение об ошибке
 
-в тесте test_add_new_book_add_book_twice_shows_error проверяем, можно ли добавить одну и ту же книгу дважды,
-выводит сообщение об ошибке
+в тесте test_add_new_book_add_book_twice_set_one)book проверяем, можно ли добавить одну и ту же книгу дважды,
+сравниваем длину books_rating с единицей (значит, что книга добавилась только один раз)
 
 в тесте test_set_book_rating_unadded_book_shows_error пытаемся поставить рейтинг книге, которой нет в 
 словаре, выводит сообщение об ошибке
